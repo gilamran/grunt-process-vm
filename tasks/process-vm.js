@@ -16,7 +16,7 @@ module.exports = function (grunt) {
             fileName: "",
             fileContent: ""
         });
-        grunt.task.run("exec:process:" + options.fileName + ":b" + options.fileContent);
+        grunt.task.run("exec:process:" + options.fileName + ":" + options.fileContent);
     });
     grunt.registerTask('build', ['process-vm']);
 };
