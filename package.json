@@ -38,7 +38,7 @@
     "dependencies": {
         "ng-parser": "^0.1.0"
     },
-    "readme": "grunt-process-vm\n================\n\nA grunt task to process apache velocity templates.\nOnce the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:\n\n```js\ngrunt.loadNpmTasks('grunt-process-vm');\nOnce loaded it automatically integrates into grunt build process.\n",
+    "readme": "grunt-process-vm\n================\n\nA grunt task to process apache velocity templates.\nOnce the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:\n\n```js\ngrunt.loadNpmTasks('grunt-process-vm');\nOnce loaded it automatically integrates into grunt build process.\n\n================\nTo set task params, add \n```js\ngrunt.config('process-vm', {options : {fileName: 'your_file_name.txt',fileContent: 'your file content'}});\nto the Gruntfile.js file of your project.",
     "readmeFilename": "README.md",
     "bugs": {
         "url": "https://github.com/wix/grunt-process-vm/issues"
