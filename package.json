@@ -1,17 +1,24 @@
 {
     "name": "grunt-process-vm",
-    "version": "0.0.1",
     "description": "Task to process Velocity templates",
-    "repository": "git@github.com:wix/grunt-process-vm.git",
+    "version": "0.0.1",
+    "homepage": "https://github.com/wix/grunt-process-vm",
     "author": {
         "name": "Wix.com",
-        "email": "",
         "url": "http://www.wix.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:wix/grunt-process-vm.git"
     },
     "keywords": [
         "gruntplugin, velocity"
     ],
-    "main": "Gruntfile.js",
+    "files": [
+        "tasks",
+        "vendor",
+        "LICENSE-MIT"
+    ],
     "engines": {
         "node": ">= 0.8.0"
     },
@@ -22,10 +29,22 @@
         "grunt-contrib-jshint": "~0.10.0",
         "grunt-release": "^0.7.0",
         "jshint-stylish": "~0.1.5",
-        "load-grunt-tasks": "~0.3.0",
-        "grunt-exec": "~0.4.6"
+        "load-grunt-tasks": "~0.3.0"
+    },
+    "peerDependencies": {
+        "grunt-exec": "~0.4.6",
+        "grunt": "~0.4.0"
     },
     "dependencies": {
         "ng-parser": "^0.1.0"
-    }
+    },
+    "readme": "grunt-process-vm\n================\n\nA grunt task to process apache velocity templates.\nOnce the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:\n\n```js\ngrunt.loadNpmTasks('grunt-process-vm');\nOnce loaded it automatically integrates into grunt build process.\n",
+    "readmeFilename": "README.md",
+    "bugs": {
+        "url": "https://github.com/wix/grunt-process-vm/issues"
+    },
+    "_id": "grunt-process-vm@0.0.1",
+    "_shasum": "1c1762a3b4d4e6b174302afa1ca78a04a350a53f",
+    "_resolved": "git://github.com/pavelme/grunt-process-vm.git#4dd269dfe1f3a740983f363ab262fc2b9e002152",
+    "_from": "grunt-process-vm-repo@git://github.com/pavelme/grunt-process-vm.git#master"
 }
