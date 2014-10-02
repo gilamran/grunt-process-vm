@@ -11,10 +11,10 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.registerTask('process-vm', 'Processes VM Files.', function() {
+    grunt.registerTask('process-vm', 'Processes VM Files.', function(fileName, fileContent) {
         var options = this.options({
-            fileName: "",
-            fileContent: ""
+            fileName: fileName || "",
+            fileContent: fileContent || ""
         });
         grunt.task.run("exec:process:" + options.fileName + ":" + options.fileContent);
     });
