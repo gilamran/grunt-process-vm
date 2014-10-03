@@ -6,7 +6,7 @@ module.exports = function (grunt) {
         process: {
             cmd: function(view, payload, output) {
                 var path = __dirname + "/..";
-                return 'java -jar ' + path + '/vendor/vmrenderer.jar ' + view + ' ' + payload + ' ' + output;
+                return 'java -jar ' + path + '/vmrenderer/vmrenderer.jar ' + view + ' ' + payload + ' ' + output;
             }
         }
     });
