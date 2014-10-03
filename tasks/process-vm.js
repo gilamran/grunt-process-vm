@@ -4,19 +4,20 @@ module.exports = function (grunt) {
 
     grunt.config('exec', {
         process: {
-            cmd: function(fileName, fileContent) {
+            cmd: function(view, payload, output) {
                 var path = __dirname + "/..";
-                return 'java -jar ' + path + '/vendor/vmrenderer.jar "' + fileName + '" "' + fileContent + '"';
+                return 'java -jar ' + path + '/vendor/vmrenderer.jar ' + view + ' ' + payload + ' ' + output;
             }
         }
     });
 
-    grunt.registerTask('process-vm', 'Processes VM Files.', function(fileName, fileContent) {
+    grunt.registerTask('process-vm', 'Processes VM Files.', function(view, payload, output) {
         var options = this.options({
-            fileName: fileName || "",
-            fileContent: fileContent || ""
+            view: view || "",
+            payload: payload || "",
+            output: output || "",
         });
-        grunt.task.run("exec:process:" + options.fileName + ":" + options.fileContent);
+        grunt.task.run("exec:process:" + options.view + ":" + options.payload + ":" + options.output);
     });
     grunt.registerTask('build', ['process-vm']);
 };
