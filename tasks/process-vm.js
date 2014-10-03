@@ -6,7 +6,7 @@ module.exports = function (grunt) {
         process: {
             cmd: function(fileName, fileContent) {
                 var path = __dirname + "/..";
-                return 'java -cp ' + path + '/vendor/templator.jar com.wix.Templator "' + fileName + '" "' + fileContent + '"';
+                return 'java -jar ' + path + '/vendor/vmrenderer.jar "' + fileName + '" "' + fileContent + '"';
             }
         }
     });
