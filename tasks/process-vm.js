@@ -15,7 +15,7 @@ module.exports = function (grunt) {
         var options = this.options({
             view: view || "",
             payload: payload || "",
-            output: output || "",
+            output: output || ""
         });
         grunt.task.run("exec:process:" + options.view + ":" + options.payload + ":" + options.output);
     });
