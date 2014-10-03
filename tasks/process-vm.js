@@ -19,5 +19,4 @@ module.exports = function (grunt) {
         });
         grunt.task.run("exec:process:" + options.view + ":" + options.payload + ":" + options.output);
     });
-    grunt.registerTask('build', ['process-vm']);
 };
